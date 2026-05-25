@@ -39,4 +39,9 @@
              <app-experience-card *ngFor="let exp of experiences" [experience]="exp"></app-experience-card>
         </div>
 
+        <h4 class="mb-2 text-2xl font-Ovo">Education</h4>
+        <div class="flex w-full flex-col gap-4 my-8">
+            <app-education-card *ngFor="let education of educaions" [education]="education"></app-education-card>
+        </div>
+
     </div>

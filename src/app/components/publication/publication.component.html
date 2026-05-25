@@ -1,0 +1,11 @@
+        <div id="about" class="w-full px-[12%] py-30 scroll-mt-20">
+        
+        <h2 class="text-center text-5xl font-Ovo">All Publications</h2>
+        <p class="text-center my-6 text-gray-700 font-Ovo dark:text-white/80">Sorted in order of weight of publication venue that I believe is most impactful</p>
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-10">
+                <div class="flex w-full flex-col gap-4 my-8">
+            <app-publication-item *ngFor="let publication of publications" [publication]="publication"></app-publication-item>
+        </div>
+            </div>
+            </div>
+    

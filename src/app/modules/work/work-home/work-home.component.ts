@@ -2,7 +2,10 @@ import { NgFor, NgIf, NgClass } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ExperienceService } from '../../../services/experience.service';
 import { Experience, ExperienceCardComponent } from '../../../components/experience-card/experience-card.component';
-import { BioService, Skills } from '../../../services/bio.service';
+import { Education, Skills } from '../../../common/type';
+import { BioService } from '../../../services/bio.service';
+import { EducationService } from '../../../services/education.service';
+import { EducationCardComponent } from '../../../components/education-card/education-card.component';
 
 export interface SkillDisplay {
   key: keyof Skills;
@@ -15,7 +18,7 @@ export interface SkillDisplay {
 
 @Component({
   selector: 'app-work-home',
-  imports: [NgFor, NgIf, NgClass, ExperienceCardComponent],
+  imports: [NgFor, NgIf, NgClass, ExperienceCardComponent, EducationCardComponent],
   templateUrl: './work-home.component.html',
   styleUrl: './work-home.component.scss'
 })
@@ -23,6 +26,7 @@ export class WorkHomeComponent implements OnInit {
   experiences: Experience[] = [];
   skillCategories: SkillDisplay[] = [];
   researchVision: string = '';
+  educaions: Education[] = [];
 
   private skillMeta: Record<keyof Skills, { icon: string; iconColor: string; badgeClasses: string }> = {
     ml: {
@@ -59,10 +63,22 @@ export class WorkHomeComponent implements OnInit {
 
   constructor(
     private workService: ExperienceService,
-    private bioService: BioService
+    private bioService: BioService,
+    private educationService: EducationService  
   ) {}
 
   ngOnInit(): void {
+
+      this.educationService.getEducations().subscribe({
+        next: (response : Education[] | null) => {
+          console.log('Education response:', response);
+          this.educaions = response || [];
+      },
+      error: (error) => {
+        console.error('Error loading education:', error);
+      }
+    });
+
     this.workService.getAllExperiences().subscribe({
       next: (response: Experience[]) => {
         if (response.length > 0) {
@@ -88,5 +104,8 @@ export class WorkHomeComponent implements OnInit {
     this.bioService.getResearchVision().subscribe((vision: string) => {
       this.researchVision = vision;
     });
+
+  
+
   }
 }

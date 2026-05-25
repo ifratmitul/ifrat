@@ -1,28 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable, map } from 'rxjs';
+import { BioData, SkillCategory, Skills } from '../common/type';
 
-export interface SkillCategory {
-  title: string;
-  tool: string[];
-}
-
-export interface Skills {
-  ml: SkillCategory;
-  programming: SkillCategory;
-  frontend: SkillCategory;
-  backend: SkillCategory;
-  database: SkillCategory;
-  devops_others: SkillCategory;
-}
-
-export interface BioData {
-  role_focus: string;
-  single_linear: string;
-  about_me: string;
-  research_vision: string;
-  skill: Skills;
-}
 
 interface BioResponse {
   data: BioData;
@@ -72,7 +52,11 @@ export class BioService {
 
   getAboutMe(): Observable<string> {
     return this.bio$.pipe(
-      map(bio => bio?.about_me ?? '')
+      map(bio => {
+        console.log(bio);
+        console.log('About Me value:', bio?.about_me);
+        return bio?.about_me ?? ''
+      })
     );
   }
 
