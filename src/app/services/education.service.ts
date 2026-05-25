@@ -25,7 +25,7 @@ export class EducationService {
   private loadEdu(): void {
     if (this.loaded) return;
 
-    this.http.get<EducationResponse>('/assets/data/education.json').subscribe({
+    this.http.get<EducationResponse>('assets/data/education.json').subscribe({
       next: (response: EducationResponse) => {
         this.eduSubject.next(response.data);
         this.loaded = true;

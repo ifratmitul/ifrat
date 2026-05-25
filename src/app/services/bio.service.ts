@@ -23,7 +23,7 @@ export class BioService {
   private loadBio(): void {
     if (this.loaded) return;
 
-    this.http.get<BioResponse>('/assets/data/bio.json').subscribe({
+    this.http.get<BioResponse>('assets/data/bio.json').subscribe({
       next: (response: BioResponse) => {
         this.bioSubject.next(response.data);
         this.loaded = true;
