@@ -5,7 +5,7 @@
 <nav id="navbar"
      [ngClass]="{
        'bg-white/50 backdrop-blur-lg shadow-sm': isScrolled && !isDarkMode,
-       'bg-darkTheme shadow-white/20': isScrolled && isDarkMode
+       'bg-darkTheme backdrop-blur-lg shadow-white/20': isScrolled && isDarkMode
      }"
      class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
 
@@ -20,11 +20,11 @@
           'border border-white/30 bg-transparent': !isScrolled && isDarkMode
         }"
         class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 font-Ovo">
-        <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#top">Home</a></li>
+        <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="/">Home</a></li>
         <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#about">About me</a></li>
-        <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#services">Services</a></li>
+        <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' routerLink="/publications">Publication</a></li>
         <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' routerLink="/work">My Work</a></li>
-        <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#contact">Contact me</a></li>
+        <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' routerLink="/contact">Contact me</a></li>
     </ul>
 
     <div class="flex items-center gap-4">
@@ -61,8 +61,7 @@
 
         <li><a href="#top" (click)="closeMenu()">Home</a></li>
         <li><a href="#about" (click)="closeMenu()">About me</a></li>
-        <li><a href="#services" (click)="closeMenu()">Services</a></li>
-        <li><a routerLink="/work" (click)="closeMenu()">My Work</a></li>
+        <li><a routerLink="/publications" (click)="closeMenu()">Publications</a></li>
         <li><a href="#contact" (click)="closeMenu()">Contact me</a></li>
     </ul>
 </nav>

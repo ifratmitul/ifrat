@@ -3,18 +3,16 @@
         {
             "order": 1,
             "position": "Graduate Research and Teaching Assistant",
-            "company": "AI Lab, University of South Dakota",
+            "company": "Department of Computer Science, University of South Dakota",
             "location": "SD, USA",
-            "start_date": "January 2025",
+            "start_date": "May 2025",
             "end_date": "Present",
             "details": [
-                "Develop explainable AI models to improve interpretability and adversarial robustness of deep neural networks.",
-                "Design and evaluate defense strategies against adversarial attacks using gradient-based explanation techniques including Grad-CAM.",
-                "Conduct experiments on medical imaging datasets to build reliable and trustworthy AI models for clinical decision support.",
-                "Publish peer-reviewed research in top-tier AI conferences, Q1 Journals and workshops.",
-                "Assist and guide undergraduate students in learning Python and JavaScript through labs and coursework. Evaluate assignments, projects, and lab work to provide constructive feedback."
+                "Design deep learning architectures that are intrinsically explainable and adversarially robust, embedding transparency and security directly into model design.",
+                "Build and benchmark end-to-end experimental pipelines on real-world datasets to validate trustworthy AI systems through explainability and adversarial robustness evaluation.",
+                "Support undergraduate students in math for machine learning, Python, and JavaScript through lab sessions, and evaluate assignments to provide constructive feedback."
             ],
-            "logo": "assets/images/logo_original_backup_with_outline-DIPF2l6U.svg",
+            "logo": "assets/images/usd-logo.png",
             "tools": ["Python", "PyTorch", "Keras"]
         },
         {
@@ -43,9 +41,10 @@
             "details": [
                 "Designed and developed three Angular-based client applications, including two for a financial platform.",
                 "Collaborated with back-end engineers to design and integrate APIs for seamless front-end functionality.",
+                "Supported multiple live projects by fixing bugs, optimizing code, and implementing new features.",
                 "Mentored junior developers on front-end technologies and software development best practices."
             ],
-            "logo": "",
+            "logo": "assets/images/brain_station_23_logo.jpeg",
             "tools": ["Angular", ".NET", "Oracle", "SQL"]
         },
         {
@@ -53,14 +52,15 @@
             "position": "Junior Software Engineer",
             "company": "Square Health Limited",
             "location": "Dhaka, Bangladesh",
-            "start_date": "June 2020",
+            "start_date": "June 2021",
             "end_date": "June 2022",
             "details": [
-                "Collaborated with cross-functional teams to develop new features and resolve existing system issues.",
-                "Led the development of key functionalities including audio/video calling, dental module integration, and dynamic prescription design.",
-                "Conducted research and feasibility analysis to identify optimal implementation strategies."
+                "Collaborated with cross-functional software engineering teams to develop new features and resolve existing system issues.",
+                "Led the development of key functionalities, including audio/video calling, dental module integration, medicine suggestion settings, and dynamic prescription design.",
+                "Conducted research and feasibility analysis to identify optimal implementation strategies for upcoming features.",
+                "Evaluated and integrated tools, libraries, APIs, and frameworks to enhance performance and ensure security in a data-intensive web environment."
             ],
-            "logo": "",
+            "logo": "assets/images/sqh-ltd.jpeg",
             "tools": ["JavaScript", "TypeScript", "Angular", "Dexie.js"]
         }
     ]

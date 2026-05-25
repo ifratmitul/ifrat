@@ -1,42 +1,28 @@
 {
     "data": [
         {
-            "degree": "PhD in Computer Science",
+            "degree": "PhD in Data Science and Engineering",
             "institution": "University of South Dakota",
             "location": "Vermillion, SD",
-            "start_date": "August 2022",
+            "start_date": "May 2026",
             "end_date": "Present",
-            "details": [
-                "Research Focus: Machine Learning, Natural Language Processing, and Data Mining.",
-                "Advisor: Dr. Jane Smith.",
-                "GPA: 3.9/4.0"
-            ],
-             "logo":""
+             "logo":"assets/images/usd-logo.png"
         },
         {
             "degree": "Master of Science in Computer Science",
             "institution": "University of South Dakota",
             "location": "Vermillion, SD",
-            "start_date": "August 2020",
-            "end_date": "May 2022",
-            "details": [
-                "Thesis: 'Enhancing Text Classification using Deep Learning Techniques'.",
-                "Advisor: Dr. John Doe.",
-                "GPA: 3.8/4.0"
-            ],
-            "logo":""
+            "start_date": "January 2025",
+            "end_date": "May 2026",
+            "logo":"assets/images/usd-logo.png"
         },
         {
             "degree": "Bachelor of Science in Computer Science",
-            "institution": "State University",
-            "location": "City, State",
-            "start_date": "August 2016",
-            "end_date": "May 2020",
-            "details": [
-                "Graduated with Honors.",
-                "Relevant Coursework: Data Structures, Algorithms, Database Systems, Operating Systems."
-            ],
-             "logo":""
+            "institution": "North South University",
+            "location": "Dhaka, Bangladesh",
+            "start_date": "2015",
+            "end_date": "2020",
+             "logo":"assets/images/nsu-logo.png"
         }
     ]
 }

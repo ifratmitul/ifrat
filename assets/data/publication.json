@@ -4,7 +4,7 @@
             "order": 1,
             "title": "Bridging Symmetry and Robustness: On the Role of Equivariance in Enhancing Adversarial Robustness",
             "authors": "Wang, L., Uddin, I. I., Santosh, K. C., Zhang, C., Qin, X., & Zhou, Y.",
-            "venue": "NeurIPS 2025",
+            "venue": "Advances in Neural Information Processing Systems (NeurIPS 2025)",
             "year": 2025,
             "isPreprint": false,
             "link": "https://neurips.cc/virtual/2025/loc/san-diego/poster/115259"
@@ -36,14 +36,49 @@
             "isPreprint": false,
             "link": "https://books.google.com/books?hl=en&lr=&id=KNqOEQAAQBAJ&oi=fnd&pg=PA95&ots=wsJ5Y0btkA&sig=JWM_T-hzJXvXrL42-vyedLu3rIk#v=onepage&q&f=false"
         },
+    
         {
-            "order": 5,
-            "title": "Explainable Category Discovery",
+
+            "order": 5.1,
+            "title": "On the use of convolutional neural network for aerodynamic data prediction",
+            "authors": "Raya, J. A. F., Jedne, N. J., Alam, S., Uddin, I. I., & Murshed, M. N.",
+            "venue": "2024 International Conference on Advances in Computing, Communication, Electrical, and Smart Systems (iCACCESS)",
+            "year": 2024,
+            "isPreprint": false,
+            "link": "https://ieeexplore.ieee.org/abstract/document/10499639/"
+        },
+
+           {
+
+            "order": 5.5,
+            "title": "A Low-cost Boat Distress Alert And Safety System",
+            "authors": "Jahan, ASM Nawroz and Uddin, Ifrat Ikhtear and Rone, MD Nasim Mahmud and Ahmed, Nova",
+            "venue": "2020 IEEE Region 10 Symposium (TENSYMP)",
+            "year": 2020,
+            "isPreprint": false,
+            "link": "https://ieeexplore.ieee.org/abstract/document/9230677/"
+        },
+
+        {
+            "order": 4.1,
+            "title": "Learning to Select Like Humans: Explainable Active Learning for Medical Imaging",
             "authors": "Uddin, I. I., Wang, L., & Santosh, K. C.",
-            "venue": "Work in Progress",
+            "venue": "Accepted for publication at IEEE Conference on Artificial Intelligence 2026",
             "year": 2026,
             "isPreprint": true,
-            "link": ""
+            "link": "https://arxiv.org/abs/2602.13308"
+        },
+        {
+            "order": 4.6,
+            "title": "Robust Feature Learning for Adversarial Defense: A Margin-Based Supervised Contrastive Framework",
+            "authors": "Uddin, I. I., Wang, L., & Santosh, K. C.",
+            "venue": "Accepted for publication at 8th International Conference on Recent Trends in Image Processing & Pattern Recognition (RTIP2R 2025)",
+            "year": 2025,
+            "isPreprint": true,
+            "link": "https://www.researchgate.net/profile/Ifrat-Uddin/publication/395349385_Robust_Feature_Learning_for_Adversarial_Defense_A_Margin-Based_Supervised_Contrastive_Framework/links/68bef8f8c76fc271eb32804e/Robust-Feature-Learning-for-Adversarial-Defense-A-Margin-Based-Supervised-Contrastive-Framework.pdf"
         }
+
+        
+
     ]
 }

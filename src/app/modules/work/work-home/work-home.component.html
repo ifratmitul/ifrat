@@ -13,55 +13,23 @@
             </div>
             <div class="flex-1">
                 <h2 class="text text-2xl font-Ovo mb-5">Research Vision</h2>
-                <p class="mb-10 max-w-2xl font-Ovo">
-                My research is driven by a single question: how do we make AI systems worthy of trust?
+                <p class="mb-10 max-w-2xl font-Ovo" *ngIf="researchVision" [innerHTML]="researchVision"></p>
 
-                At a time when AI is reshaping every critical domain — healthcare, law, finance, national 
-                security — the cost of opaque, brittle, and vulnerable models is no longer theoretical. 
-                My work sits at the intersection of Explainable AI, Adversarial Robustness, and AI Security, 
-                with a singular goal: to make intelligent systems not just powerful, but accountable, 
-                resilient, and safe for the communities that depend on them.
-
-                I believe responsible AI is not a constraint on progress — it is the condition for it.
-
-                <br /><br />
-                Before research, I spent 4+ years as a Software Engineer building production-grade systems 
-                used by thousands — across telemedicine platforms in South Asia and international tax research 
-                tools used across Europe. That background shapes how I think: not just as a scientist asking 
-                what is possible, but as an engineer who knows what it takes to build things that must 
-                actually work in the world.
-                </p>
-
-                <h4 class="my-6 text-black text-2xl font-Ovo dark:text-white/80">Skills</h4>
-                <ul class="flex items-center gap-3 sm:gap-5">
-                    <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="/assets/images/vscode.png" alt="vscode" class="w-5 sm:w-7">
-                    </li>
-                    <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        
-                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" class="w-5 sm:w-7" />
-          
-                    </li>
-                    <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        
-                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" class="w-5 sm:w-7"/>
-          
-
-                    </li>
-                    <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-5 sm:w-7" />
-          
-                    </li>
-                    <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="/assets/images/git.png" alt="git" class="w-5 sm:w-7">
-                    </li>
-                </ul>
+                <h4 class="my-6 text-black text-2xl font-Ovo dark:text-white/80">Technical Skills</h4>
+                <div class="space-y-4 max-w-2xl" *ngIf="skillCategories.length > 0">
+                    <div *ngFor="let category of skillCategories">
+                        <h5 class="text-sm font-semibold text-gray-700 dark:text-white/90 mb-2">
+                            <i [ngClass]="[category.icon, 'mr-2', category.iconColor]"></i>{{category.title}}
+                        </h5>
+                        <div class="flex flex-wrap gap-2">
+                            <span *ngFor="let tool of category.tools"
+                                  class="px-3 py-1 text-xs font-medium rounded-full border"
+                                  [ngClass]="category.badgeClasses">
+                                {{tool}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -69,6 +37,11 @@
     
         <div class="flex w-full flex-col gap-4 my-8">
              <app-experience-card *ngFor="let exp of experiences" [experience]="exp"></app-experience-card>
+        </div>
+
+        <h4 class="mb-2 text-2xl font-Ovo">Education</h4>
+        <div class="flex w-full flex-col gap-4 my-8">
+            <app-education-card *ngFor="let education of educaions" [education]="education"></app-education-card>
         </div>
 
     </div>

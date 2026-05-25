@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable, map } from 'rxjs';
-import { Publication } from '../components/publication-item/publication-item.component';
+import { Publication } from '../common/type';
+
 
 interface PublicationResponse {
   data: Publication[];

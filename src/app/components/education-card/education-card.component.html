@@ -1,1 +1,47 @@
-<p>education-card works!</p>
+
+<div class="border border-gray-300 dark:border-white/30 rounded-xl p-6
+            hover:bg-lightHover hover:-translate-y-1 duration-500
+            hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
+
+    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+        <!-- Company Logo -->
+        <div class="flex-shrink-0">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl border border-gray-200 dark:border-white/20
+                        flex items-center justify-center bg-gray-50 dark:bg-darkHover overflow-hidden">
+                <img *ngIf="education.logo"
+                     [src]="education.logo"
+                     [alt]="education.institution + ' logo'"
+                     class="w-12 h-12 sm:w-14 sm:h-14 object-contain">
+                <span *ngIf="!education.logo"
+                      class="text-2xl sm:text-3xl font-bold text-gray-400 dark:text-white/40">
+                    {{ education.institution.charAt(0) }}
+                </span>
+            </div>
+        </div>
+
+        <!-- Education Details -->
+        <div class="flex-1 min-w-0">
+            <!-- Degree -->
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white font-Ovo">
+                {{ education.degree }}
+            </h3>
+
+            <!-- Institution -->
+            <p class="text-sm text-gray-600 dark:text-white/70 mt-1">
+                {{ education.institution }}
+            </p>
+
+            <!-- Date & Location -->
+            <p class="text-sm text-gray-500 dark:text-white/60 mt-1">
+                {{ education.start_date }} - {{ education.end_date }} • {{ education.location }}
+            </p>
+
+            <!-- GPA -->
+            <p *ngIf="education.gpa" class="text-sm text-gray-600 dark:text-white/70 mt-2">
+                <span class="font-medium">GPA:</span> {{ education.gpa }}
+            </p>
+        </div>
+
+          
+        </div>
+    </div>

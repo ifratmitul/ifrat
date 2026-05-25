@@ -1,15 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { NgIf } from '@angular/common';
+import { Publication } from '../../common/type';
 
-export interface Publication {
-  order: number;
-  title: string;
-  authors: string;
-  venue: string;
-  year: number;
-  isPreprint: boolean;
-  link: string;
-}
 
 @Component({
   selector: 'app-publication-item',
