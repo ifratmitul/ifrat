@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ifratmitul.github.io/ifrat/sitemap.xml
