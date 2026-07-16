@@ -2,6 +2,12 @@
         
         <h2 class="text-center text-5xl font-Ovo">All Publications</h2>
         <p class="text-center my-6 text-gray-700 font-Ovo dark:text-white/80">Sorted in order of weight of publication venue that I believe is most impactful</p>
+        <p class="text-center mb-6 font-Ovo">
+            <a href="https://scholar.google.com/citations?user=lmeXeYwAAAAJ&hl=en" target="_blank" class="inline-flex items-center gap-2 text-blue-800 dark:text-blue-400 hover:text-black dark:hover:text-white transition-colors font-medium">
+                <i class="fa-brands fa-google-scholar"></i>
+                Visit my Google Scholar for more
+            </a>
+        </p>
         <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-10">
                 <div class="flex w-full flex-col gap-4 my-8">
             <app-publication-item *ngFor="let publication of publications" [publication]="publication"></app-publication-item>

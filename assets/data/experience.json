@@ -2,7 +2,7 @@
     "data": [
         {
             "order": 1,
-            "position": "Graduate Research and Teaching Assistant",
+            "position": "Graduate Research Assistant",
             "company": "Department of Computer Science, University of South Dakota",
             "location": "SD, USA",
             "start_date": "May 2025",
@@ -34,7 +34,7 @@
         {
             "order": 4,
             "position": "Software Engineer",
-            "company": "Brain Station 23 PLC",
+            "company": "Brain Station 23",
             "location": "Dhaka, Bangladesh",
             "start_date": "July 2022",
             "end_date": "February 2023",

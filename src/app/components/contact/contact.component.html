@@ -12,11 +12,16 @@
             </a>
             or use the form below.
         </p>
-        <a href="https://www.linkedin.com/in/iifrat-mitul/" target="_blank"
-            class="flex items-center justify-center gap-2 w-max mx-auto mb-12 py-2 px-6 bg-[#0077B5] text-white rounded-full hover:bg-[#005885] duration-300">
-            <i class="fa-brands fa-linkedin-in"></i>
-            <span class="font-Ovo">Connect on LinkedIn</span>
-        </a>
+        <div class="flex items-center justify-center gap-6 w-max mx-auto mb-12">
+            <a href="https://scholar.google.com/citations?user=lmeXeYwAAAAJ&hl=en" target="_blank" aria-label="Google Scholar" title="Google Scholar"
+                class="text-2xl text-gray-700 hover:text-black dark:text-white/80 dark:hover:text-white transition">
+                <i class="fa-brands fa-google-scholar"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/iifrat-mitul/" target="_blank" aria-label="LinkedIn" title="LinkedIn"
+                class="text-2xl text-gray-700 hover:text-black dark:text-white/80 dark:hover:text-white transition">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
 
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="max-w-2xl mx-auto">
             <!-- Honeypot field - hidden from humans, bots will fill it -->

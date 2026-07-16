@@ -65,8 +65,8 @@
             "authors": "Uddin, I. I., Wang, L., & Santosh, K. C.",
             "venue": "Accepted for publication at IEEE Conference on Artificial Intelligence 2026",
             "year": 2026,
-            "isPreprint": true,
-            "link": "https://arxiv.org/abs/2602.13308"
+            "isPreprint": false,
+            "link": "https://ieeexplore.ieee.org/abstract/document/11536249"
         },
         {
             "order": 4.6,
