@@ -10,7 +10,7 @@ export const routes: Routes = [
     loadChildren: () => import('./modules/education/education.module').then(m => m.EducationModule)
   },
   {
-    path: 'work',
+    path: 'me',
     loadChildren: () => import('./modules/work/work.module').then(m => m.WorkModule)
   },
    {

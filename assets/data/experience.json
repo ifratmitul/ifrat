@@ -5,12 +5,13 @@
             "position": "Graduate Research Assistant",
             "company": "Department of Computer Science, University of South Dakota",
             "location": "SD, USA",
-            "start_date": "May 2025",
+            "start_date": "June 2025",
             "end_date": "Present",
             "details": [
-                "Design deep learning architectures that are intrinsically explainable and adversarially robust, embedding transparency and security directly into model design.",
+                "Lead a research line on explainable open-world recognition: concept-bottleneck models that discover novel categories in unlabeled data, estimate how many there are with Bayesian nonparametrics, and explain every prediction and discovered class through named concepts; one first-author manuscript under review and a second in preparation, in collaboration with the University of Maine.",
+                "Co-authored four peer-reviewed papers (NeurIPS, IEEE JBHI, AAAI Symposium, etc.) on explanation-guided learning and architecture-level adversarial robustness within 18 months of entering ML research.",
                 "Build and benchmark end-to-end experimental pipelines on real-world datasets to validate trustworthy AI systems through explainability and adversarial robustness evaluation.",
-                "Support undergraduate students in math for machine learning, Python, and JavaScript through lab sessions, and evaluate assignments to provide constructive feedback."
+                "Serve as a reviewer for ML journals and conferences, including IEEE Transactions on Medical Imaging, ICML Workshops, etc."
             ],
             "logo": "assets/images/usd-logo.png",
             "tools": ["Python", "PyTorch", "Keras"]

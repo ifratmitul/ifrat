@@ -68,17 +68,17 @@
             "isPreprint": false,
             "link": "https://ieeexplore.ieee.org/abstract/document/11536249"
         },
-        {
-            "order": 4.6,
-            "title": "Robust Feature Learning for Adversarial Defense: A Margin-Based Supervised Contrastive Framework",
-            "authors": "Uddin, I. I., Wang, L., & Santosh, K. C.",
-            "venue": "Accepted for publication at 8th International Conference on Recent Trends in Image Processing & Pattern Recognition (RTIP2R 2025)",
-            "year": 2025,
-            "isPreprint": true,
-            "link": "https://www.researchgate.net/profile/Ifrat-Uddin/publication/395349385_Robust_Feature_Learning_for_Adversarial_Defense_A_Margin-Based_Supervised_Contrastive_Framework/links/68bef8f8c76fc271eb32804e/Robust-Feature-Learning-for-Adversarial-Defense-A-Margin-Based-Supervised-Contrastive-Framework.pdf"
-        }
 
         
+         {
+            "order": 2.9,
+            "title": "Explainable Novel Category Discovery in Semantic Concept Space",
+            "authors": "Uddin, I. I., Zhou, Y., Zhang, C. , & Wang, L.",
+            "venue": "Accepted for publication at 8th IEEE International Conference on Cognitive Machine Intelligence",
+            "year": 2026,
+            "isPreprint": true,
+            "link": ""
+        }
 
     ]
 }

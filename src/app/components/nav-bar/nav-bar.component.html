@@ -10,8 +10,8 @@
      class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
 
     <a href="#top">
-        <img src="assets/images/ifrat-logo.png" alt="Logo" class="w-28 cursor-pointer mr-14 dark:hidden" />
-        <img src="assets/images/ifrat-logo_dark.png" alt="Logo" class="w-28 cursor-pointer mr-14 hidden dark:block" />
+        <img src="assets/images/ifrat-logo.png" alt="Logo" class="w-28 cursor-pointer mr-4 xl:mr-14 dark:hidden" />
+        <img src="assets/images/ifrat-logo_dark.png" alt="Logo" class="w-28 cursor-pointer mr-4 xl:mr-14 hidden dark:block" />
     </a>
 
     <ul id="navLink"
@@ -19,15 +19,15 @@
           'bg-white/50 shadow-sm': !isScrolled && !isDarkMode,
           'border border-white/30 bg-transparent': !isScrolled && isDarkMode
         }"
-        class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 font-Ovo">
+        class="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8 rounded-full px-6 lg:px-8 xl:px-12 py-3 font-Ovo whitespace-nowrap">
         <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' routerLink="/">Home</a></li>
-        <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#about">About me</a></li>
+        <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' routerLink="/me">About Me</a></li>
+        <!-- <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#about">About me</a></li> -->
         <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' routerLink="/publications">Publication</a></li>
-        <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' routerLink="/work">My Work</a></li>
-        <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' routerLink="/contact">Contact me</a></li>
+        <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' routerLink="/contact">Contact</a></li>
     </ul>
 
-    <div class="flex items-center gap-4">
+    <div class="flex items-center gap-3 lg:gap-4">
         <button (click)="toggleTheme()">
             <img src="assets/images/moon_icon.png" alt="" class="w-5 dark:hidden" />
             <img src="assets/images/sun_icon.png" alt="" class="w-5 hidden dark:block" />
@@ -37,13 +37,21 @@
             class="text-lg text-gray-700 hover:text-black dark:text-white/80 dark:hover:text-white transition">
             <i class="fa-brands fa-google-scholar"></i>
         </a>
+        <a href="https://github.com/ifratmitul" target="_blank" aria-label="GitHub" title="GitHub"
+            class="text-lg text-gray-700 hover:text-black dark:text-white/80 dark:hover:text-white transition">
+            <i class="fa-brands fa-github"></i>
+        </a>
         <a href="https://www.linkedin.com/in/iifrat-mitul/" target="_blank" aria-label="LinkedIn" title="LinkedIn"
             class="text-lg text-gray-700 hover:text-black dark:text-white/80 dark:hover:text-white transition">
             <i class="fa-brands fa-linkedin-in"></i>
         </a>
+        <a href="assets/resume/resume_ifrat.pdf" download="Ifrat_Resume.pdf" aria-label="Download Resume" title="Download Resume"
+            class="text-lg text-gray-700 hover:text-black dark:text-white/80 dark:hover:text-white transition">
+            <i class="fa-solid fa-file-arrow-down"></i>
+        </a>
 
         <a href="#contact"
-            class="hidden lg:flex items-center gap-3 px-8 py-1.5 border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Ovo dark:border-white/30">
+            class="hidden xl:flex items-center gap-3 px-8 py-1.5 border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Ovo dark:border-white/30">
             Contact
             <img src="assets/images/arrow-icon.png" alt="" class="w-3 dark:hidden" />
             <img src="assets/images/arrow-icon-dark.png" alt="" class="w-3 hidden dark:block" />
@@ -69,9 +77,9 @@
         </div>
 
         <li><a routerLink="/" (click)="closeMenu()">Home</a></li>
-        <li><a routerLink="/work" (click)="closeMenu()">My Work</a></li>
-        <li><a href="#about" (click)="closeMenu()">About me</a></li>
+        <li><a routerLink="/me" (click)="closeMenu()">About Me</a></li>
+        <!-- <li><a href="#about" (click)="closeMenu()">About me</a></li> -->
         <li><a routerLink="/publications" (click)="closeMenu()">Publications</a></li>
-        <li><a routerLink="/contact" (click)="closeMenu()">Contact me</a></li>
+        <li><a routerLink="/contact" (click)="closeMenu()">Contact</a></li>
     </ul>
 </nav>

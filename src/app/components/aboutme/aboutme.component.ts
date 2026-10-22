@@ -43,7 +43,7 @@ export class AboutmeComponent implements OnInit {
       }
     });
 
-    this.publicationService.getTopPublications(3).subscribe({
+    this.publicationService.getTopPublications(4).subscribe({
         next: (response) => {
           
           this.recent_publications = response;
